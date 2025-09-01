@@ -48,7 +48,7 @@ body {
 .left-sec {
     background-color: #E5E7EB;
     width: 100%;
-    max-width: 590px;
+    max-width: 615px;
     padding: 2rem;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -104,7 +104,7 @@ body {
 }
 
 .line {
-    border: 1px solid black;
+    border: 1px solid #D2D5DA;
 }
 
 .discount {
@@ -173,8 +173,8 @@ body {
 .right-sec {
     background-color: white;
     width: 100%;
-    max-width: 590px;
-    padding: 1.2rem;
+    max-width: 615px;
+    padding: 2rem;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     box-shadow: 0px 4px 9px #E5E7EB;
