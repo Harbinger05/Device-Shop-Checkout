@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.main-bg {
+    background-image: url(resources/background-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 36vh;
+}
+
+.header {
+    text-align: center;
+    padding-top: 4rem;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    margin-right: 1rem;
+    font-weight: 600;
+    font-size: 1.9rem;
+}
+
+.header span {
+    font-size: 1rem;
+    background-color: #1D1D1F;
+    padding: 0.5rem 0.9rem;
+    border-radius: 50px;
+}
+
+.flex-sec {
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/* LEFT SECTION */
+.left-sec {
+    background-color: #E5E7EB;
+    width: 100%;
+    max-width: 590px;
+    padding: 2rem;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.left-sec .image {
+    width: 100px;
+    height: 100px;
+    background-color: #FFFFFF;
+    border: 2px solid #D2D5DA;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-des {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.left-sec .item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-bottom: 1.3rem;
+}
+
+.info .name {
+    margin-bottom: 0.5rem;
+    color: #1D1D1F;
+    font-weight: 600;
+}
+
+.info .color {
+    margin-bottom: 2rem;
+    color: #394150;
+    font-weight: 600;
+}
+
+.info .quantity {
+    color: #394150;
+}
+
+.product-price {
+    text-align: right;
+}
+
+.product-price .price {
+    margin-bottom: 3.5rem;
+    color: #1D1D1F;
+    font-weight: 600;
+}
+
+.line {
+    border: 1px solid black;
+}
+
+.discount {
+    margin-top: 1.1rem;
+}
+
+.discount input {
+    width: 64%;
+    border-radius: 10px;
+    border: 2px solid #D2D5DA;
+    margin-right: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.discount input::placeholder {
+    font-size: 1rem;
+    color: #394150;
+    font-weight: 500;
+}
+
+.discount button {
+    background-color: #1D1D1F;
+    color: #FFFFFF;
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-style: none;
+}
+
+.discount button:hover {
+    transition: all 0.2s ease-in;
+    background-color: white;
+    color: black;
+}
+
+.final-pricing {
+    margin-top: 1.2rem;
+}
+
+.sub-total,
+.tax,
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+}
+
+.sub-total,
+.tax {
+    color: #394150;
+    font-weight: 600;
+}
+
+.total {
+    color: #1D1D1F;
+    font-weight: 600;
+}
+
+/* RIGHT SECTION */
+.right-sec {
+    background-color: white;
+    width: 100%;
+    max-width: 590px;
+    padding: 1.2rem;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 4px 9px #E5E7EB;
+}
+
+.right-sec label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.right-sec input {
+    width: 93%;
+    padding: 1rem;
+    background-color: #F3F4F6;
+    border-radius: 7px;
+    border: 2px solid #D2D5DA;
+}
+
+.right-sec input::placeholder {
+    font-size: 1rem;
+    color: #394150;
+    font-weight: 500;
+}
+
+.country-postal {
+    display: flex;
+    gap: 7rem;
+}
+
+.country-postal input {
+    width: 100%;
+}
+
+.full-name,
+.email,
+.country-postal {
+    margin-bottom: 1.2rem;
+}
+
+.right-sec p {
+    margin-bottom: 0.5rem;
+}
+
+.right-sec button {
+    margin-top: 1rem;
+    background-color: black;
+    color: white;
+    border-style: none;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.right-sec button:hover {
+    transition: all 0.2s ease-in;
+    background-color: #E5E7EB;
+    color: black;
+}
+
+
+
+@media(max-width: 1024px) {
+    .country-postal input {
+        width: 70%;
+    }
+}
+
+@media (max-width: 765px) {
+    .flex-sec {
+        flex-direction: column;
+        margin-inline: 0.5rem;
+    }
+
+    .left-sec {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+    }
+
+    .right-sec {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .left-sec,
+    .right-sec {
+        width: unset;
+    }
+
+    .main-bg {
+        background-position: center;
+    }
+
+    .discount {
+        margin-top: 1.1rem;
+    }
+
+    .discount input {
+        width: 90%;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .discount button {
+        width: 100%;
+    }
+}
